@@ -227,7 +227,7 @@ test.describe("Admin > Extensions > Catalog", () => {
       await uiHelper.verifyHeading(heading);
     }
 
-    await expect(page.getByText("AuthorRed Hat")).toBeVisible();
+    await expect(page.getByText("AuthorAWS")).toBeVisible();
 
     await page.getByRole("button", { name: "close" }).click();
     await extensions.resetSupportTypeFilter("Community plugin");
